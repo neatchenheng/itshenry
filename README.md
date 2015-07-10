@@ -1,7 +1,12 @@
 # itshenry
 Working Footprint
 
-### 2015.07.07
-.bashrc config file.
+## Folder structures
+### linux
+bashrc config file and hosts file for go over china GFW.
+
+### git
 git scm
-.vimrc config file.
+
+### vim
+vimrc config file
