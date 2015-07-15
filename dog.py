@@ -2,6 +2,7 @@ from Crypto.Cipher import AES
 from Crypto.Hash import MD5
 from Crypto import Random
 import base64,sys,os
+from datetime import datetime
 
 def encrypt_content(plain_content,password):
 	iv = Random.new().read(AES.block_size)
@@ -43,7 +44,9 @@ def decrypt_file(file_name,password):
 		content = f.read()
 		f.close()
 		content = decrypt_content(content,password)
-		f = open("%s.%s" % (file_name.split(".")[0],"p"),"w+")
+		now = datetime.now()
+		label = now.strftime('%Y%m%d%H%M%S')
+		f = open("%s%s.%s" % (file_name.split(".")[0], label, "p"),"w+")
 		f.write(content)
 		f.close()
 	else:

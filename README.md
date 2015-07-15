@@ -1,5 +1,6 @@
 # itshenry
-Working Footprint
+Footprint
+***password tips: my name is henry, you know?***
 
 ## Folder structures
 ### linux
