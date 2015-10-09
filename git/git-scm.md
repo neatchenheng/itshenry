@@ -77,6 +77,10 @@ git branch -d hotfix-1.0.1
 ```
 e.g.:
 git push ssh://{username}@{gerrit.host}:29418/{project} tag v0.2
+
+or
+
+git push origin HEAD:refs/tags/v0.1
 ```
 
 # 本地版本库
