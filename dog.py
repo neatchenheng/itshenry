@@ -68,7 +68,7 @@ def usage():
 	print "\tpassword to encrypt or decrypt file"
 	print "USAGE"
 	print "\tpython dog.py encrypt plain.p PasswOrd"
-	print "\tpython dog.py decrypt confidential.s PasswOrd"
+	print "\tpython dog.py decrypt confidential.c PasswOrd"
 
 if __name__ == "__main__":
 	args = sys.argv
